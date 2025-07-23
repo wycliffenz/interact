@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Missions Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .options label {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+    }
+    .result {
+      margin-top: 30px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Which Mission Are You Most Aligned With?</h1>
+  <p>Choose the answer that best fits your perspective or interest:</p>
+
+  <form id="quizForm">
+    <div class="question">
+      <p>1. I'm passionate about supporting national Christians to serve cross-culturally:</p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="Interserve"> Yes! Equipping local believers is key</label>
+        <label><input type="radio" name="q1" value="OM"> Anyone passionate about Jesus should go!</label>
+        <label><input type="radio" name="q1" value="OMF"> Especially those in Asia – there's great need</label>
+        <label><input type="radio" name="q1" value="Wycliffe"> By building local capacity in Bible translation</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>2. I’m most drawn to ministry in:</p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="OMF"> East Asia</label>
+        <label><input type="radio" name="q2" value="Interserve"> The Muslim world</label>
+        <label><input type="radio" name="q2" value="Wycliffe"> Remote language communities</label>
+        <label><input type="radio" name="q2" value="OM"> Anywhere the gospel isn’t yet available</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>3. My preferred ministry style is:</p>
+      <div class="options">
+        <label><input type="radio" name="q3" value="Interserve"> Long-term and incarnational</label>
+        <label><input type="radio" name="q3" value="OM"> Bold and creative</label>
+        <label><input type="radio" name="q3" value="OMF"> Culturally sensitive and grounded in prayer</label>
+        <label><input type="radio" name="q3" value="Wycliffe"> Foundation-laying work with lasting impact</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>4. I’m most comfortable using my skills in:</p>
+      <div class="options">
+        <label><input type="radio" name="q4" value="Wycliffe"> Linguistics, education, or IT</label>
+        <label><input type="radio" name="q4" value="OM"> Social media, sailing, or starting new things</label>
+        <label><input type="radio" name="q4" value="OMF"> Discipling, mentoring, and pastoral care</label>
+        <label><input type="radio" name="q4" value="Interserve"> Medicine, development, or business</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>5. What drives me most is:</p>
+      <div class="options">
+        <label><input type="radio" name="q5" value="OM"> Reaching the unreached no matter what</label>
+        <label><input type="radio" name="q5" value="Wycliffe"> Making sure people have access to God’s Word</label>
+        <label><input type="radio" name="q5" value="OMF"> Seeing Christ formed in East Asian communities</label>
+        <label><input type="radio" name="q5" value="Interserve"> Living out Jesus’ love in broken places</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>6. I like to work:</p>
+      <div class="options">
+        <label><input type="radio" name="q6" value="Interserve"> In partnership with the local church</label>
+        <label><input type="radio" name="q6" value="Wycliffe"> With nationals to empower their leadership</label>
+        <label><input type="radio" name="q6" value="OM"> With a fast-paced, global team</label>
+        <label><input type="radio" name="q6" value="OMF"> With deep cultural understanding and long-term commitment</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>7. The kind of impact I want to see is:</p>
+      <div class="options">
+        <label><input type="radio" name="q7" value="OM"> Bold outreach and church planting</label>
+        <label><input type="radio" name="q7" value="Interserve"> Holistic transformation of society</label>
+        <label><input type="radio" name="q7" value="OMF"> Long-term disciple-making</label>
+        <label><input type="radio" name="q7" value="Wycliffe"> Access to Scripture in heart languages</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>8. I would rather:</p>
+      <div class="options">
+        <label><input type="radio" name="q8" value="Wycliffe"> Build systems and strategies that last</label>
+        <label><input type="radio" name="q8" value="OM"> Do something bold and hope God uses it</label>
+        <label><input type="radio" name="q8" value="OMF"> Relocate to deeply engage with a new culture and language</label>
+        <label><input type="radio" name="q8" value="Interserve"> Work in a hard place but with deep purpose</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>9. When I imagine missions, I think of:</p>
+      <div class="options">
+        <label><input type="radio" name="q9" value="OM"> Dynamic teams and crazy outreach</label>
+        <label><input type="radio" name="q9" value="OMF"> Local churches multiplying through long-term presence</label>
+        <label><input type="radio" name="q9" value="Interserve"> Being salt and light through my job</label>
+        <label><input type="radio" name="q9" value="Wycliffe"> Working behind the scenes to help others thrive</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>10. I feel most energized when:</p>
+      <div class="options">
+        <label><input type="radio" name="q10" value="Interserve"> I can use my professional skills to help people</label>
+        <label><input type="radio" name="q10" value="OMF"> I’m forming deep relationships cross-culturally</label>
+        <label><input type="radio" name="q10" value="Wycliffe"> I know my work has long-term eternal impact</label>
+        <label><input type="radio" name="q10" value="OM"> I’m part of something global, adventurous, and evangelistic</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="calculateResult()">Submit</button>
+  </form>
+
+  <div class="result" id="resultBox" style="display:none;"></div>
+
+  <script>
+    function calculateResult() {
+      const form = document.forms.quizForm;
+      const answers = Array.from(form.elements).filter(el => el.checked);
+      const score = {};
+
+      answers.forEach(ans => {
+        score[ans.value] = (score[ans.value] || 0) + 1;
+      });
+
+      const bestFit = Object.entries(score).sort((a, b) => b[1] - a[1])[0];
+
+      let resultText = "You most align with: <strong>" + bestFit[0] + "</strong>!";
+
+      const descriptions = {
+        "OMF": "OMF works to share Christ in East Asia through church planting, discipleship, and long-term relationships.",
+        "Interserve": "Interserve partners with local believers in Asia and the Arab world to transform communities through professional service and Christian witness.",
+        "OM": "OM sends out people from everywhere to everywhere to share Jesus through creative evangelism, mercy ministries, and bold outreach.",
+        "Wycliffe": "Wycliffe focuses on Bible translation and literacy, helping people receive God's Word in their own language, often in remote areas."
+      };
+
+      resultText += "<br><br>" + descriptions[bestFit[0]];
+      document.getElementById("resultBox").innerHTML = resultText;
+      document.getElementById("resultBox").style.display = "block";
+    }
+  </script>
+</body>
+</html>
